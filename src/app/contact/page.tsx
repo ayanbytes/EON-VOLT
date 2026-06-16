@@ -26,24 +26,24 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-card border border-border p-8 lg:p-12 rounded-3xl shadow-lg">
               <h2 className="text-2xl font-heading font-bold text-foreground mb-6">Send a Message</h2>
-              <form className="space-y-6">
+              <form action="https://formspree.io/f/mnjyoabz" method="POST" className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground">First Name</label>
-                    <input type="text" className="w-full h-12 px-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Mohammad" />
+                    <input type="text" name="firstName" required className="w-full h-12 px-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Mohammad" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-foreground">Last Name</label>
-                    <input type="text" className="w-full h-12 px-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Faizan" />
+                    <input type="text" name="lastName" required className="w-full h-12 px-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Faizan" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">Corporate Email</label>
-                  <input type="email" className="w-full h-12 px-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="eon-volt@gmail.com" />
+                  <input type="email" name="email" required className="w-full h-12 px-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="eon-volt@gmail.com" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">Inquiry Type</label>
-                  <select className="w-full h-12 px-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+                  <select name="inquiryType" required className="w-full h-12 px-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
                     <option>Sales & Partnerships</option>
                     <option>Manufacturing</option>
                     <option>Repair</option>
@@ -54,9 +54,9 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-foreground">Message</label>
-                  <textarea className="w-full h-32 p-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none" placeholder="Tell us about your project requirements..."></textarea>
+                  <textarea name="message" required className="w-full h-32 p-4 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none" placeholder="Tell us about your project requirements..."></textarea>
                 </div>
-                <Button className="w-full h-12 text-lg font-semibold">Submit Inquiry</Button>
+                <Button type="submit" className="w-full h-12 text-lg font-semibold">Submit Inquiry</Button>
               </form>
             </div>
 

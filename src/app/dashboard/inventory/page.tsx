@@ -63,10 +63,8 @@ export default function InventoryPage() {
         <div className="flex items-center gap-3 w-full sm:w-auto">
           
           <Dialog open={isAddOpen} onOpenChange={setIsAddOpen}>
-            <DialogTrigger asChild>
-              <Button variant="outline" className="gap-2 w-full sm:w-auto">
-                <Plus className="w-4 h-4" /> Add Product
-              </Button>
+            <DialogTrigger render={<Button variant="outline" className="gap-2 w-full sm:w-auto" />}>
+              <span className="flex items-center gap-2"><Plus className="w-4 h-4" /> Add Product</span>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
               <DialogHeader>
