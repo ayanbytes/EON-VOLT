@@ -94,10 +94,6 @@ export function Footer() {
         {/* Certifications & Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-wrap items-center gap-4 text-background/50 text-sm">
-            <span>ISO 9001:2015</span>
-            <span className="w-1 h-1 rounded-full bg-background/20" />
-            <span>ISO 14001</span>
-            <span className="w-1 h-1 rounded-full bg-background/20" />
             <span>CE Certified</span>
             <span className="w-1 h-1 rounded-full bg-background/20" />
             <span>RoHS Compliant</span>

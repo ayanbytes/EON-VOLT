@@ -3,7 +3,7 @@ export function TrustIndicators() {
     { value: "2+", label: "Years Experience" },
     { value: "15+", label: "Clients Globally" },
     { value: "200+", label: "Battery Units Delivered" },
-    { value: "ISO", label: "Certified Manufacturing" },
+    { value: "100%", label: "Quality Tested" },
   ];
 
   return (

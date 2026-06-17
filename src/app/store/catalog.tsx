@@ -125,7 +125,7 @@ export default function StoreCatalog() {
                   </div>
                   <div className="mt-auto flex items-center justify-between">
                     <div className="flex flex-col">
-                      <span className="text-xl font-bold text-foreground">₹{product.price.toLocaleString("en-IN")}</span>
+                      <span className="text-xl font-bold text-foreground"></span>
                     </div>
                     {isOutOfStock ? (
                       <Button variant="outline" size="sm" disabled className="font-semibold text-muted-foreground border-dashed">

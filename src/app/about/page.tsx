@@ -11,7 +11,7 @@ export default function AboutPage() {
     { value: "2+", label: "Years of Experience" },
     { value: "15+", label: "Global Clients" },
     { value: "200+", label: "Battery Units Delivered" },
-    { value: "ISO", label: "Certified Facilities" },
+    { value: "100%", label: "Quality Tested Facilities" },
   ];
 
   const values = [

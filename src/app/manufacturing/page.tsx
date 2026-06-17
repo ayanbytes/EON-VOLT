@@ -38,7 +38,7 @@ export default function ManufacturingPage() {
             Precision Manufacturing at Scale
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground">
-            Our ISO-certified gigafactories combine robotic automation with rigorous quality control to produce the world's most reliable lithium battery systems.
+            Our advanced gigafactories combine robotic automation with rigorous quality control to produce the world's most reliable lithium battery systems.
           </p>
         </div>
       </section>
@@ -92,8 +92,6 @@ export default function ManufacturingPage() {
               </p>
               <ul className="space-y-4">
                 {[
-                  "ISO 9001:2015 Quality Management",
-                  "ISO 14001 Environmental Management",
                   "UN38.3 Transportation Safety",
                   "IEC 62133 Safety Requirements",
                   "CE & RoHS Compliant",
@@ -107,12 +105,7 @@ export default function ManufacturingPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
                {/* Badge Placeholders */}
-               <div className="aspect-square bg-background/5 rounded-xl border border-background/10 flex items-center justify-center p-8">
-                 <div className="text-center">
-                   <div className="text-2xl font-bold mb-1">ISO</div>
-                   <div className="text-xs text-background/50">9001:2015</div>
-                 </div>
-               </div>
+
                <div className="aspect-square bg-background/5 rounded-xl border border-background/10 flex items-center justify-center p-8">
                  <div className="text-center">
                    <div className="text-2xl font-bold mb-1">UN</div>

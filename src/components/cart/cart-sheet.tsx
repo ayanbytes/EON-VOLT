@@ -12,10 +12,10 @@ export function CartSheet() {
     let message = "Hi Eon-Volt! I would like to request a quotation for the following items:\n\n";
     
     items.forEach((item, index) => {
-      message += `${index + 1}. ${item.name} - ${item.quantity}x (₹${(item.price * item.quantity).toLocaleString("en-IN")})\n`;
+      message += `${index + 1}. ${item.name} - ${item.quantity}x\n`;
     });
     
-    message += `\n*Estimated Total: ₹${cartTotal.toLocaleString("en-IN")}*\n\nPlease let me know the next steps for this quotation.`;
+    message += `\n\nPlease let me know the next steps for this quotation.`;
     
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/916263874633?text=${encodedMessage}`, '_blank');
@@ -76,7 +76,7 @@ export function CartSheet() {
                         <Plus className="w-3 h-3" />
                       </button>
                     </div>
-                    <span className="font-bold">₹{(item.price * item.quantity).toLocaleString("en-IN")}</span>
+                    <span className="font-bold"></span>
                   </div>
                 </div>
               </div>
@@ -86,10 +86,7 @@ export function CartSheet() {
 
         {items.length > 0 && (
           <div className="pt-6 border-t border-border">
-            <div className="flex justify-between mb-4">
-              <span className="text-muted-foreground">Subtotal</span>
-              <span className="font-bold text-lg">₹{cartTotal.toLocaleString("en-IN")}</span>
-            </div>
+
             <Button 
               className="w-full h-12 text-lg mb-3 shadow-md flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white"
               onClick={handleCheckout}

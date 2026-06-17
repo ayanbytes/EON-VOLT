@@ -60,11 +60,11 @@ export function IndustriesServed() {
                     {ind.description}
                   </p>
                   <div className="mt-auto opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200">
-                    <Link href={ind.link} passHref legacyBehavior>
-                      <Button variant="default" className="h-12 px-8 text-base shadow-lg">
+                    <Button asChild variant="default" className="h-12 px-8 text-base shadow-lg">
+                      <Link href={ind.link}>
                         Explore Solutions
-                      </Button>
-                    </Link>
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               </div>
